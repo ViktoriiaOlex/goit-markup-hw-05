@@ -588,17 +588,17 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
-    opacity: 0;
-    visibility: hidden;
+    /* opacity: 0;
+    visibility: hidden; */
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 
-.is-hidden {
+/* .is-hidden {
     display: none;
-}
+} */
  .is-open {
      opacity: 1;
      visibility: visible;
