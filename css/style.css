@@ -500,6 +500,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .icons-footer {
 fill: var(--cloud);
 }
+
+/* HW 5 */
 .subscribe-form {
     display: flex;
     flex-direction: column;
@@ -509,8 +511,15 @@ fill: var(--cloud);
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    margin-bottom: 0.02em;
+    font-size: 16px;
     margin-bottom: 16px;
 }
+.footer-form {
+    display: flex;
+    gap 24px
+}
+
 .form-container {
     display: flex;
     flex-direction: row;
@@ -526,28 +535,45 @@ fill: var(--cloud);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     margin-right: 24px;
     background: var(--NAVY-BLUE, #2E2F42);
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: #ffffff;
     
 }
 input::placeholder {
-    color: var(--white, #FFF);
-        font-size: 12px;
+        color: var(--white, #FFF);
+        /* font-size: 12px;
         line-height: 2;
         letter-spacing: 0.48px;
-        padding-left: 16px;
+        padding-left: 16px; */
 }
 .form-button-footer {
-    display: inline-flex;
+    display: flex;
     padding: 8px 24px;
     justify-content: center;
     align-items: center;
     gap: 16px;
     border-radius: 4px;
     color: var(--white);
-    background: var(--IRIS, #4D5AE5);
-    width: 185px;
+    background-color: var(--IRIS, #4D5AE5);
+    min-width: 165px;
     height: 40px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
+.icons-footer {
+    margin-left: 16px;
+}
+
+
 /*Modal*/
 
 /*backdrop*/
@@ -561,22 +587,22 @@ input::placeholder {
     justify-content: center;
     align-items: center;
     background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
-    /* opacity: 0;
+    opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 
- /* .is-hidden {
+ .is-hidden {
     display: none;
 }
  .is-open {
      opacity: 1;
      visibility: visible;
      pointer-events: auto;
- }   */
+ }   
 
 .modal {
     position: absolute;
@@ -761,4 +787,5 @@ fill: var(--white);
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
 }
