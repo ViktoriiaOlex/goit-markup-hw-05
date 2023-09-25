@@ -684,7 +684,6 @@ label {
 
 .label-box {
     position: relative;
-    
 }
 .topbar-form-input {
     width: 100%;
@@ -761,7 +760,7 @@ border-color: #4D5AE5;
     justify-content: center;
     fill: transparent;
 }
-.check-input:checked +.modal-text .icon-check {
+.topbar-form-input:checked +.modal-text .icon-check {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
