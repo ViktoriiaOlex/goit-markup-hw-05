@@ -684,6 +684,7 @@ label {
 
 .label-box {
     position: relative;
+    
 }
 .topbar-form-input {
     width: 100%;
@@ -743,7 +744,6 @@ border-color: #4D5AE5;
 }
 .modal-text {
         color: var(--LIGHT-SLATE, #8E8F99);
-        font-family: Roboto, sans-serif;
         font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
@@ -760,24 +760,27 @@ border-color: #4D5AE5;
     justify-content: center;
     fill: transparent;
 }
-.topbar-form-input:checked +.modal-text .icon-check {
+.check-input:checked + .modal-text .icon-check {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
 }
- .check {
-fill: var(--white);
+ .check-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
  }
+ 
 
 .accent {
-        color: var(--IRIS, #4D5AE5);
-        font-family: Roboto, sans-serif;
+        color: var(--IRIS, #4D5AE5);}
+        /* font-family: Roboto, sans-serif;
         font-size: 12px;
         line-height: 16px;
         letter-spacing: 0.48px;
         text-decoration-line: underline;
-}
-.send-button {
+}*/
+.send-button { 
     display: block;
     min-width: 169px;
     height: 56px;
