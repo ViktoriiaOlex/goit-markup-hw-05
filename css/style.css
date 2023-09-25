@@ -695,8 +695,10 @@ label {
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.topbar-form-input:focus+.topbar-form-icon {
+.topbar-form-input:focus {
     border-color: #4D5AE5;
+}
+.topbar-form-input:focus+.topbar-form-icon {
     fill: #4D5AE5;
 }
 .topbar-form-icon {
@@ -708,7 +710,7 @@ label {
 }
 
 .check-input:checked+.modal-text .icon-check {
-    opacity: 1;
+    /* opacity: 1; */
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
@@ -755,7 +757,6 @@ border-color: #4D5AE5;
 }
 
 .icon-check {
-    
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
