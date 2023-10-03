@@ -81,10 +81,9 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     justify-content: center;
 }
 
-.nav-link {
-    padding: 24px 0;
-    display: block;
-}
+/* .nav-link {
+    
+} */
 .header-contacts {
     display: flex;
     gap: 40px;
@@ -114,6 +113,8 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     color: var(--navy-blue, #2e2f42);
 }
 .nav-link {
+    padding: 24px 0;
+    display: block;
     color: var(--navy-blue); 
     font-size: 16px;
     font-weight: 500;
@@ -121,7 +122,10 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     letter-spacing: 0.32px;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color:#404bbf;
+}
+.current{
+    color: #404bbf;
+    
 }
 .nav-link:focus {
     color: #404BBF;
@@ -131,7 +135,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.nav-link::after {
+.current::after {
     color: #404bbf;
     content: "";
     position: absolute;
@@ -533,7 +537,7 @@ fill: var(--cloud);
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    margin-right: 24px;
+    /* margin-right: 24px; */
     background: var(--NAVY-BLUE, #2E2F42);
     background-color: transparent;
     font-size: 12px;
@@ -570,9 +574,9 @@ input::placeholder {
     cursor: pointer;
     border: none;
 }
-.icons-footer {
+/* .icons-footer {
     margin-left: 16px;
-}
+} */
 
 
 /*Modal*/
@@ -738,9 +742,7 @@ border-color: #4D5AE5;
 
 .accept {
     margin-bottom: 24px;
-    /* display: flex;
-    flex-direction: row;
-    max-width: 338px; */
+    
 }
 .modal-text {
         color: var(--LIGHT-SLATE, #8E8F99);
@@ -773,13 +775,8 @@ border-color: #4D5AE5;
  
 
 .accent {
-        color: var(--IRIS, #4D5AE5);}
-        /* font-family: Roboto, sans-serif;
-        font-size: 12px;
-        line-height: 16px;
-        letter-spacing: 0.48px;
-        text-decoration-line: underline;
-}*/
+        color: var(--IRIS, #4D5AE5);
+    }
 .send-button { 
     display: block;
     min-width: 169px;
